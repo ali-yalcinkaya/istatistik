@@ -1,184 +1,77 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
+# Theme
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "mint"
 
-# Theme Settings
-#theme                    : #minimal-mistakes-jekyll
-# remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "mint" # güzel seçim!
+# Site
+locale: "tr"
+title: "Ali Yalçınkaya - İstatistiksel Danışmanlık"
+title_separator: "—"
+url: "https://ali-yalcinkaya.github.io"
+baseurl: "/istatistik"
+repository: "ali-yalcinkaya/istatistik"
+teaser: "/assets/images/teaser.jpg"
+logo: "/assets/images/logo.png"  # varsa logoyu aç
 
-# Site Settings
-locale                   : "tr-TR"
-title                    : "Ali Yalçınkaya - İstatistiksel Danışmanlık"
-title_separator          : "-"
-subtitle                 : "Veri Analizi ve İstatistiksel Danışmanlık Hizmetleri"
-name                     : "Ali Yalçınkaya"
-description              : "R, Python ve SPSS ile profesyonel veri analizi ve istatistiksel danışmanlık hizmetleri. Akademik araştırma, tez danışmanlığı ve iş zekası çözümleri."
-url                      : "https://ali-yalcinkaya.github.io" # GitHub Pages URL'niz
-baseurl                  : "/istatistik" # repository adınız
-repository               : "ali-yalcinkaya/istatistik" # GitHub kullanıcı adınız/repo adı
-teaser                   : #"/assets/images/teaser.jpg" # varsayılan görsel
-logo                     : # "/assets/images/logo.png" # eğer logo varsa
-masthead_title           : "İstatistiksel Danışmanlık"
-breadcrumbs              : true # navigasyon için faydalı
-words_per_minute         : 200
-enable_copy_code_button  : true # kod blokları için faydalı
-search                   : true # arama özelliği
+# SEO
+plugins:
+  - jekyll-seo-tag     # ÖNEMLİ: SEO meta etiketleri
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-paginate
 
-# SEO Related - Önemli!
-google_site_verification : # Google Search Console'dan alacaksınız
-bing_site_verification   :
-yandex_site_verification :
-
-# Social Sharing
-twitter:
-  username               : # Twitter kullanıcı adınız varsa
-facebook:
-  username               : # Facebook varsa
-og_image                 : "/assets/images/site-logo.png" # sosyal paylaşım görseli
-
-# Analytics - Önemli!
+# Analytics
 analytics:
-  provider               : "google-gtag" # Google Analytics için
+  provider: "google-gtag"
   google:
-    tracking_id          : # G-XXXXXXXXXX şeklinde ID alacaksınız
-    anonymize_ip         : true # KVKK uyumu için
+    tracking_id: ""       # G-XXXX... (ekle)
+    anonymize_ip: true
 
-# Site Author - ÇOK ÖNEMLİ BÖLÜM!
+# Open Graph / Sosyal
+og_image: "/assets/images/site-og.jpg"  # 1200x630 önerilir
+twitter:
+  card: "summary_large_image"
+  username: ""  # varsa ekle
+
+# Author
 author:
-  name             : "Ali Yalçınkaya"
-  avatar           : "/assets/images/bio-photo.jpg" # profil fotoğrafınız
-  bio              : "İstatistiksel Danışman | Veri Analizi Uzmanı | R, Python & SPSS Specialist"
-  location         : "İstanbul, Türkiye"
-  email            : "info@aliyalcinkaya.com" # domain aldığınızda
+  name: "Dr. Ali Yalçınkaya"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "İstatistiksel Danışman | Veri Analizi Uzmanı | R, Python & SPSS Specialist"
+  location: "İstanbul, Türkiye"
+  email: "info@aliyalcinkaya.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+    - label: "E-posta"
+      icon: "fas fa-fw fa-envelope"
       url: "mailto:info@aliyalcinkaya.com"
-      url: "https://linkedin.com/in/profiliniz" # LinkedIn profiliniz
-    - label: "Google Scholar"
-      icon: "fas fa-fw fa-graduation-cap" 
-      url: "https://scholar.google.com/citations?user=ID" # Scholar profiliniz
-    - label: "ResearchGate"
-      icon: "fab fa-fw fa-researchgate"
-      url: "https://researchgate.net/profile/profiliniz"
-
-# Site Footer
-footer:
-  links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/profiliniz"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:info@aliyalcinkaya.com"
+      url: "https://www.linkedin.com/in/profiliniz"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=ID"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ali-yalcinkaya"
+    - label: "ResearchGate"
+      icon: "fab fa-fw fa-researchgate"
+      url: "https://www.researchgate.net/profile/profiliniz"
 
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - minimal-mistakes-jekyll.gemspec
-  - node_modules
-  - package.json
-  - package-lock.json
-  - Rakefile
-  - README
-  - tmp
-  - /docs 
-  - /test 
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+# Arama (Lunr, eklentisiz çalışır)
+search: true
+enable_copy_code_button: true
+breadcrumbs: true
 
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed
-
-# Outputting
-permalink: /:categories/:title/
+# Çıktı / Zaman dilimi
 timezone: "Europe/Istanbul"
+permalink: /:categories/:title/
 
 # Pagination
-paginate: 5
-paginate_path: /page:num/
+paginate: 9
+paginate_path: /sayfa:num/
 
-# Plugins
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-
-# Archives
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-
-# HTML Compression
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
-
-# Defaults
+# Varsayılanlar
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
@@ -186,13 +79,21 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: false # başlangıçta kapalı
+      comments: false
       share: true
       related: true
-  # _pages
   - scope:
       path: "_pages"
       type: pages
     values:
       layout: single
       author_profile: true
+
+# GitHub Pages safe ile uyum
+whitelist:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-paginate
