@@ -5,8 +5,6 @@ layout: single
 classes: wide
 ---
 
-{% include feature_row id="hizmetler" type="left" %}
-
 {% capture hizmet1 %}
 **Akademik Analiz:** Tez-makale istatistiği, örneklem hesaplama, metodoloji danışmanlığı.
 {% endcapture %}
@@ -18,11 +16,11 @@ classes: wide
 {% endcapture %}
 
 {% assign feature_row = site.data.features.hizmetler | default: 
-  ( 
-    ( site.data.features.hizmetler or
-      [{'title':'Akademik Analiz','excerpt':hizmet1},
-       {'title':'Kurumsal Analiz','excerpt':hizmet2},
-       {'title':'Eğitim & Mentorluk','excerpt':hizmet3}]
-    )
-  )
+  [
+    { "title": "Akademik Analiz",  "excerpt": hizmet1 },
+    { "title": "Kurumsal Analiz",  "excerpt": hizmet2 },
+    { "title": "Eğitim & Mentorluk","excerpt": hizmet3 }
+  ]
 %}
+
+{% include feature_row %}
