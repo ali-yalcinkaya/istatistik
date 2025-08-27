@@ -18,7 +18,7 @@ description              : "R, Python ve SPSS ile profesyonel veri analizi ve is
 url                      : "https://ali-yalcinkaya.github.io" # GitHub Pages URL'niz
 baseurl                  : "/istatistik" # repository adınız
 repository               : "ali-yalcinkaya/istatistik" # GitHub kullanıcı adınız/repo adı
-teaser                   : "/assets/images/teaser.jpg" # varsayılan görsel
+teaser                   : #"/assets/images/teaser.jpg" # varsayılan görsel
 logo                     : # "/assets/images/logo.png" # eğer logo varsa
 masthead_title           : "İstatistiksel Danışmanlık"
 breadcrumbs              : true # navigasyon için faydalı
@@ -47,7 +47,7 @@ analytics:
 
 # Site Author - ÇOK ÖNEMLİ BÖLÜM!
 author:
-  name             : "Dr. Ali Yalçınkaya"
+  name             : "Ali Yalçınkaya"
   avatar           : "/assets/images/bio-photo.jpg" # profil fotoğrafınız
   bio              : "İstatistiksel Danışman | Veri Analizi Uzmanı | R, Python & SPSS Specialist"
   location         : "İstanbul, Türkiye"
@@ -56,15 +56,10 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:info@aliyalcinkaya.com"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/profiliniz" # LinkedIn profiliniz
     - label: "Google Scholar"
       icon: "fas fa-fw fa-graduation-cap" 
       url: "https://scholar.google.com/citations?user=ID" # Scholar profiliniz
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ali-yalcinkaya"
     - label: "ResearchGate"
       icon: "fab fa-fw fa-researchgate"
       url: "https://researchgate.net/profile/profiliniz"
