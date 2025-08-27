@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "neon" #"default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "air"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "tr-TR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "İstatistiksel Danışmanlık"
 title_separator          : "-"
