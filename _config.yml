@@ -113,10 +113,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Ali Yalçınkaya"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "Uzman Psikolog, İstatistiksel Danışman ve Sinirbilimci "
+  location         : "İstanbul"
   email            :
   links:
     - label: "Email"
