@@ -115,10 +115,9 @@ sass:
 # =========================
 include:
   - .htaccess
-  - _pages
+  - docs/_pages
 
 exclude:
-  - docs
   - test
   - vendor
   - .asset-cache
