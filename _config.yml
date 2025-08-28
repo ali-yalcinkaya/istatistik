@@ -115,7 +115,8 @@ sass:
 # =========================
 include:
   - .htaccess
-  - docs/_pages
+  - pages
+  - docs
 
 exclude:
   - test
